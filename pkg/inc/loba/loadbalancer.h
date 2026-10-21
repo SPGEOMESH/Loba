@@ -263,14 +263,14 @@ public:
       return out;
    }
 
-   void msg(std::string& x) {
+   void msg(std::string x) {
       if constexpr (verbose) {
          std::cout << "[LoadBalancer] " << x << std::endl;
       }
    }
 
    template <typename T, size_t N>
-   void show_array(std::string& name, std::array<T, N> arr) {
+   void show_array(std::string name, std::array<T, N> arr) {
       if constexpr (verbose) {
          std::cout << "[LoadBalancer] " << name << " ";
          for (size_t i = 0; i < N; ++i) {
