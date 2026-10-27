@@ -19,13 +19,13 @@ using std::cout; using std::endl; using std::cerr;
 \file print_warn.hh
 \brief Defines simple error and warning message printing
 \author Vladimir Florinski
-
-This file is part of the SPECTRUM suite of scientific numerical simulation codes. SPECTRUM stands for Space Plasma and Energetic Charged particle TRansport on Unstructured Meshes. The code simulates plasma or neutral particle flows using MHD equations on a grid, transport of cosmic rays using stochastic or grid based methods. The "unstructured" part refers to the use of a geodesic mesh providing a uniform coverage of the surface of a sphere.
 */
 
 
 #include <fstream>
 #include <iomanip>
+#include <cmath>
+using std::fabs;
 
 
 
